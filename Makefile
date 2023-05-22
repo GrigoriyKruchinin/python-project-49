@@ -4,6 +4,15 @@ install:
 brain-games:
 	poetry run brain-games
 
+brain-calc:
+	poetry run brain-calc
+
+brain-even:
+	poetry run brain-evenn
+
+brain-gcd:
+	poetry run brain-gcd
+
 build:
 	poetry build
 
@@ -16,4 +25,4 @@ package-install:
 lint:
 	poetry run flake8 brain_games
 
-.PHONY: install brain-games build publish package-inistall lint
+.PHONY: install brain-games brain-calc brain-even brain-gcd build publish package-inistall lint
