@@ -5,6 +5,8 @@ from brain_games.logic_even import play_game
 def main():
     print("Welcome to the Brain Games!")
     name = welcome_user()
+    print('Answer "yes" if the number is even, '
+          'otherwise answer brain"no"')
     play_game(name)
 
 
