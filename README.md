@@ -10,3 +10,5 @@ My project:
 [![asciicast](https://asciinema.org/a/RTuEh76qglwZcGSsVLlhM3eyI.svg)](https://asciinema.org/a/RTuEh76qglwZcGSsVLlhM3eyI)
 #brain-gcd
 [![asciicast](https://asciinema.org/a/586451.svg)](https://asciinema.org/a/586451)
+#brain-progression
+[![asciicast](https://asciinema.org/a/586465.svg)](https://asciinema.org/a/586465)
