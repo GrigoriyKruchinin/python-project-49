@@ -12,3 +12,5 @@ My project:
 [![asciicast](https://asciinema.org/a/586471.svg)](https://asciinema.org/a/586471)
 #brain-progression
 [![asciicast](https://asciinema.org/a/586465.svg)](https://asciinema.org/a/586465)
+#brain-prime
+[![asciicast](https://asciinema.org/a/586482.svg)](https://asciinema.org/a/586482)
