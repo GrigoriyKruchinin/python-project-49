@@ -28,3 +28,6 @@ def play_gcd_game(name):
                   f"Correct answer was '{expected_answer}'.")
             print("Let's try again!")
             return
+
+    print(f"Congratulations, {name}!")
+
