@@ -30,4 +30,3 @@ def play_gcd_game(name):
             return
 
     print(f"Congratulations, {name}!")
-
