@@ -1,13 +1,15 @@
-from brain_games.cli import welcome_user
-from brain_games.logic_prime import play_prime_game
+from brain_games.game_logic import (
+    play_game, welcome_player, get_player_name, congratulate_player
+)
+from brain_games.games.game_prime import brain_prime_game_logic
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = welcome_user()
-    print('Answer "yes" if given number is prime. '
-          'Otherwise answer "no".')
-    play_prime_game(name)
+    welcome_player()
+    name = get_player_name()
+    print("Answer 'yes' if the number is prime, otherwise answer 'no'.")
+    if play_game(brain_prime_game_logic):
+        congratulate_player(name)
 
 
 if __name__ == "__main__":

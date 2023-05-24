@@ -1,12 +1,15 @@
-from brain_games.cli import welcome_user
-from brain_games.logic_progression import play_progression_game
+from brain_games.game_logic import (
+    play_game, welcome_player, get_player_name, congratulate_player
+)
+from brain_games.games.game_progression import brain_progression_game_logic
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = welcome_user()
+    welcome_player()
+    name = get_player_name()
     print("What number is missing in the progression?")
-    play_progression_game(name)
+    if play_game(brain_progression_game_logic):
+        congratulate_player(name)
 
 
 if __name__ == "__main__":
