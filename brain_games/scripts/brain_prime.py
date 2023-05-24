@@ -7,7 +7,7 @@ from brain_games.games.game_prime import brain_prime_game_logic
 def main():
     welcome_player()
     name = get_player_name()
-    print("Answer 'yes' if the number is prime, otherwise answer 'no'.")
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     if play_game(brain_prime_game_logic):
         congratulate_player(name)
     else:
