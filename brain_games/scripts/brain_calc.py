@@ -1,17 +1,11 @@
-from brain_games.game_logic import (
-    play_game, welcome_player, get_player_name, congratulate_player, game_over
-)
-from brain_games.games.game_calc import brain_calc_game_logic
+from brain_games.game_logic import welcome_player, play_game
+from brain_games.games.game_calc import task, game_calc_logic
 
 
 def main():
-    welcome_player()
-    name = get_player_name()
-    print("What is the result of the expression?")
-    if play_game(brain_calc_game_logic):
-        congratulate_player(name)
-    else:
-        game_over(name)
+    name = welcome_player()
+    task()
+    play_game(game_calc_logic, name)
 
 
 if __name__ == "__main__":

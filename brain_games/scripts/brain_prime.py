@@ -1,17 +1,11 @@
-from brain_games.game_logic import (
-    play_game, welcome_player, get_player_name, congratulate_player, game_over
-)
-from brain_games.games.game_prime import brain_prime_game_logic
+from brain_games.game_logic import welcome_player, play_game
+from brain_games.games.game_prime import task, game_prime_logic
 
 
 def main():
-    welcome_player()
-    name = get_player_name()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    if play_game(brain_prime_game_logic):
-        congratulate_player(name)
-    else:
-        game_over(name)
+    name = welcome_player()
+    task()
+    play_game(game_prime_logic, name)
 
 
 if __name__ == "__main__":

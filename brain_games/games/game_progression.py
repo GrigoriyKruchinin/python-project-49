@@ -1,8 +1,11 @@
 import random
-from brain_games.game_logic import check_answer
 
 
-def generate_progression():
+def task():
+    print('What number is missing in the progression?')
+
+
+def game_progression_logic():
     start = random.randint(1, 10)
     diff = random.randint(2, 9)
     length = 10
@@ -12,11 +15,3 @@ def generate_progression():
     progression[hidden_index] = '..'
     question = f"Question: {' '.join(progression)}"
     return question, correct_answer
-
-
-def brain_progression_game_logic():
-    question, correct_answer = generate_progression()
-
-    user_answer = input(f"{question}\nYour answer: ")
-
-    return check_answer(user_answer, correct_answer)

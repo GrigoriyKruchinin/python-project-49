@@ -1,16 +1,16 @@
 import random
-from brain_games.game_logic import check_answer
+
+
+def task():
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
 def is_even(number):
     return number % 2 == 0
 
 
-def brain_even_game_logic():
+def game_even_logic():
     number = random.randint(1, 100)
-    correct_answer = "yes" if is_even(number) else "no"
-
     question = f"Question: {number}"
-    user_answer = input(f"{question}\nYour answer: ")
-
-    return check_answer(user_answer, correct_answer)
+    correct_answer = "yes" if is_even(number) else "no"
+    return question, correct_answer

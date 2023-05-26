@@ -3,40 +3,27 @@ import prompt
 
 def welcome_player():
     print("Welcome to the Brain Games!")
-
-
-def get_player_name():
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
     return name
 
 
-def congratulate_player(name):
-    print(f"Congratulations, {name}!")
-
-
-def check_answer(user_answer, correct_answer):
-    if user_answer == correct_answer:
-        print("Correct!")
-        return True
-    else:
-        print(f"'{user_answer}' is wrong answer ;(. "
-              f"Correct answer was '{correct_answer}'.")
-        return False
-
-
-def game_over(name):
-    print(f"Let's try again, {name}!")
-
-
-def play_game(game_logic_function):
+def play_game(game_logic, name):
     correct_answers = 0
-    attempts = 3
 
-    while correct_answers < attempts:
-        if game_logic_function():
+    while correct_answers < 3:
+        question, correct_answer = game_logic()
+        print(question)
+        user_answer = prompt.string("Your answer: ")
+
+        if user_answer == correct_answer:
+            print("Correct!")
             correct_answers += 1
         else:
-            return False
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}!")
+            break
 
-    return True
+    if correct_answers == 3:
+        print(f"Congratulations, {name}!")
