@@ -1,8 +1,7 @@
 import random
 
 
-def task():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
@@ -16,6 +15,6 @@ def is_prime(number):
 
 def game_prime_logic():
     number = random.randint(1, 100)
-    question = f"Question: {number}"
+    question = f"{number}"
     correct_answer = "yes" if is_prime(number) else "no"
     return question, correct_answer

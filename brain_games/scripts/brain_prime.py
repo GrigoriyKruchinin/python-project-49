@@ -1,11 +1,9 @@
-from brain_games.game_logic import welcome_player, play_game
-from brain_games.games.game_prime import task, game_prime_logic
+from brain_games.game_logic import play_game
+from brain_games.games.game_prime import TASK, game_prime_logic
 
 
 def main():
-    name = welcome_player()
-    task()
-    play_game(game_prime_logic, name)
+    play_game(TASK, game_prime_logic)
 
 
 if __name__ == "__main__":

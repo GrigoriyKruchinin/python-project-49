@@ -1,19 +1,17 @@
 import prompt
 
 
-def welcome_player():
+def play_game(TASK, game_logic):
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-    return name
+    print(TASK)
 
-
-def play_game(game_logic, name):
     correct_answers = 0
 
     while correct_answers < 3:
         question, correct_answer = game_logic()
-        print(question)
+        print(f"Question: {question}")
         user_answer = prompt.string("Your answer: ")
 
         if user_answer == correct_answer:
@@ -25,5 +23,5 @@ def play_game(game_logic, name):
             print(f"Let's try again, {name}!")
             break
 
-    if correct_answers == 3:
+    else:
         print(f"Congratulations, {name}!")

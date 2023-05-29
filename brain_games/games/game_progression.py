@@ -1,8 +1,7 @@
 import random
 
 
-def task():
-    print('What number is missing in the progression?')
+TASK = 'What number is missing in the progression?'
 
 
 def game_progression_logic():
@@ -13,5 +12,5 @@ def game_progression_logic():
     hidden_index = random.randint(0, length - 1)
     correct_answer = progression[hidden_index]
     progression[hidden_index] = '..'
-    question = f"Question: {' '.join(progression)}"
+    question = f"{' '.join(progression)}"
     return question, correct_answer
