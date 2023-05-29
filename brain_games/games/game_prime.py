@@ -13,7 +13,7 @@ def is_prime(number):
     return True
 
 
-def game_prime_logic():
+def generation():
     number = random.randint(1, 100)
     question = f"{number}"
     correct_answer = "yes" if is_prime(number) else "no"

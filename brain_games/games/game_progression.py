@@ -4,7 +4,7 @@ import random
 TASK = 'What number is missing in the progression?'
 
 
-def game_progression_logic():
+def generation():
     start = random.randint(1, 10)
     diff = random.randint(2, 9)
     length = 10
