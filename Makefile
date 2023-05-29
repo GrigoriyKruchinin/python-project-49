@@ -8,7 +8,7 @@ brain-calc:
 	poetry run brain-calc
 
 brain-even:
-	poetry run brain-evenn
+	poetry run brain-even
 
 brain-gcd:
 	poetry run brain-gcd

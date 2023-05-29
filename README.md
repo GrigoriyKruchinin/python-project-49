@@ -30,7 +30,7 @@ poetry install
 brain-even
 
 «Калькулятор»:
-rain-calc
+brain-calc
 
 «Наибольший общий делитель (НОД)»:
 brain-gcd
