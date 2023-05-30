@@ -13,7 +13,7 @@ def is_prime(number):
     return True
 
 
-def generation():
+def generate_data():
     number = random.randint(1, 100)
     question = f"{number}"
     correct_answer = "yes" if is_prime(number) else "no"

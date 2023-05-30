@@ -1,9 +1,9 @@
-from brain_games.games import game_calc
-from brain_games.game_logic import play_game
+from brain_games.games import calc
+from brain_games.game_logic import play
 
 
 def main():
-    play_game(game_calc)
+    play(calc)
 
 
 if __name__ == "__main__":

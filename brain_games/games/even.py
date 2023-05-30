@@ -8,7 +8,7 @@ def is_even(number):
     return number % 2 == 0
 
 
-def generation():
+def generate_data():
     number = random.randint(1, 100)
     question = f"{number}"
     correct_answer = "yes" if is_even(number) else "no"
