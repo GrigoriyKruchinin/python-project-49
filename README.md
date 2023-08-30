@@ -65,8 +65,10 @@ brain-progression
 ***
 ## Контакты
 - Автор: Grigoriy Kruchinin
-- GitHub: https://github.com/GrigoriyKruchinin
-- Email: gkruchinin75@gmail.com
+- [GitHub](https://github.com/GrigoriyKruchinin)
+- [Email](gkruchinin75@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/grigoriy-kruchinin/)
+
 ***
 ### Демонстрация работы программы:
 
