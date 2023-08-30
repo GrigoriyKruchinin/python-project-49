@@ -1,5 +1,6 @@
 # Brain Games
 ***
+![Hexlet Badge](https://img.shields.io/badge/Hexlet-116EF5?logo=hexlet&logoColor=fff&style=for-the-badge)
 [![Actions Status](https://github.com/GrigoriyKruchinin/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/GrigoriyKruchinin/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a52f66fd43a393dea0a7/maintainability)](https://codeclimate.com/github/GrigoriyKruchinin/python-project-49/maintainability)
 
